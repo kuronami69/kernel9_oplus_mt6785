@@ -45,7 +45,7 @@ jobs:
           cd mt6785
           rm -rf KernelSU
           curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-          git clone --depth=1 https://github.com/psionicprjkt/aarch64-linux-android-4.9 arm64 && git clone --depth=1 https://github.com/psionicprjkt/arm-linux-androideabi-4.9 arm32
+          git clone --depth=1 https://github.com/KudProject/aarch64-linux-android-4.9 
           wget --quiet https://android.googlesource.com/platform//prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r522817.tar.gz -O "clang.tar.gz"
           mkdir clang && tar -xf clang.tar.gz -C clang && rm -f clang.tar.gz
       - name: Setup Build Kernel
