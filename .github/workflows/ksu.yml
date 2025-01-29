@@ -51,7 +51,10 @@ jobs:
       - name: Setup Build Kernel
         run: cd mt6785 && bash build-ksu.sh
         working-directory: ${{ steps.pwd.outputs.workspace-folder }}
-        
+      
+      - name: Setup MemKernel
+        run: |
+          curl -LSs "https://raw.githubusercontent.com/kuronami69/MemKernel/kernel/setup.sh" | bash -s Y
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v1
