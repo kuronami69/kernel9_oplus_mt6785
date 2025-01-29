@@ -62,7 +62,7 @@ jobs:
         mkdir zyc-clang
         tar -xzvf Clang-*.tar.gz -C zyc-clang >> /dev/null
         #mem module
-        curl -LSs "https://raw.githubusercontent.com/zfdx123/kernel_driver_hack/main/kernel/setup.sh"
+        curl -LSs "https://raw.githubusercontent.com/kuronami69/MemKernel/main/kernel/setup.sh" | bash -s Y
         chmod +x setup.sh
          ./setup.sh
         # Clone AnyKernel3
