@@ -62,7 +62,7 @@ jobs:
         mkdir zyc-clang
         tar -xzvf Clang-*.tar.gz -C zyc-clang >> /dev/null
         #mem module
-        curl -LSs "https://raw.githubusercontent.com/Poko-Apps/MemKernel/main/kernel/setup.sh" | bash -s Y
+        curl -LSs "https://raw.githubusercontent.com/zfdx123/kernel_driver_hack/main/kernel/setup.sh" | bash -s d
         # Clone AnyKernel3
         git clone https://github.com/osm0sis/AnyKernel3
         sed -i 's/do.devicecheck=1/do.devicecheck=0/g' AnyKernel3/anykernel.sh
