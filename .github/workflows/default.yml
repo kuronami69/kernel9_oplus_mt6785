@@ -27,8 +27,9 @@ jobs:
           git config --global user.name "gofaraway71"
           git config --global user.email aalbatron@google.com
           git clone --recursive --depth=1 https://officialputuid:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GH_REPO_PRIVATE }} -b ${{ secrets.GH_BRANCH_PRIVATE }} salaa && cd salaa
-          git clone --depth=1 https://github.com/psionicprjkt/aarch64-linux-android-4.9 arm64
-          git clone --depth=1 https://github.com/psionicprjkt/arm-linux-androideabi-4.9 arm32
+          git clone --depth=1 https://github.com/KudProject/aarch64-linux-android-4.9 arm64
+          git clone --depth=1 https://github.com/
+          
           wget --quiet https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r522817.tar.gz -O "aosp-clang.tar.gz"
           mkdir clang && tar -xf aosp-clang.tar.gz -C clang && rm -f aosp-clang.tar.gz
 
