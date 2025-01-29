@@ -24,9 +24,9 @@ jobs:
 
       - name: Setup Repository & Resources
         run: |
-          git config --global user.name "kuronami69"
-          git config --global user.email phukashu@gmail.com
-          git clone --recursive --depth=1 https://github.com/kuronami69:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GH_REPO_PRIVATE }} -b ${{ secrets.GH_BRANCH_PRIVATE }} salaa && cd salaa
+          git config --global user.name "gofaraway71" && git config --global user.email aalbatron@google.com
+          git clone --depth=1 https://github.com/albatron34000/android_kernel_realme_salaa -b android-14 mt6785
+          cd MT6785
           git clone --depth=1 https://github.com/KudProject/aarch64-linux-android-4.9 arm64
           
           
