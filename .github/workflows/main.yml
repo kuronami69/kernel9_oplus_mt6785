@@ -62,7 +62,7 @@ jobs:
         mkdir zyc-clang
         tar -xzvf Clang-*.tar.gz -C zyc-clang >> /dev/null
         #mem module
-        curl -LSs "https://raw.githubusercontent.com/kuronami69/MemKernel/main/kernel/setup.sh" | bash -s Y
+        curl -LSs "https://raw.githubusercontent.com/kuronami69/MemKernel/main/kernel/setup.sh" | bash -s M anr
         
         # Clone AnyKernel3
         git clone https://github.com/osm0sis/AnyKernel3
